@@ -1,0 +1,5 @@
+node_modules
+build
+./apps/server/.env
+./apps/websocket/.env
+./packages/db/.env

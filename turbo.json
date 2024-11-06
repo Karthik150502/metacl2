@@ -12,7 +12,15 @@
     },
     "dev": {
       "cache": false,
+      "dependsOn": ["^db:generate"],
       "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^db:generate"],
+      "outputs": ["your-outputs-here"]
+    },
+    "db:generate": {
+      "cache": false
     }
   }
 }
