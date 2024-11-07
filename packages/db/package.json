@@ -8,7 +8,12 @@
   "scripts": {
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
-    "db:seed": "prisma db seed"
+    "db:seed": "prisma db seed",
+    "dev": "npm run prisma:init",
+    "prisma:init": "npx prisma migrate dev --skip-seed && npx prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "",

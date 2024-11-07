@@ -7,8 +7,7 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "dev:docker": "npm run prisma:docker && pnpm run dev",
-    "prisma:docker": "cd packages/db && npx prisma migrate dev --skip-seed && npx prisma db seed"
+    "dev:docker": "pnpm run dev"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
